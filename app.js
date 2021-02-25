@@ -24,3 +24,14 @@ function buildTAble(data) {
     );
     });
 }
+function handlClick() {
+    // Grab the datetime value from the filter
+    let date = d3.select("datetime').property("value");
+    let filterData = tableData; 
+    if (date) {
+        filteredData = filteredData.filter(row => row.datetime === date);
+    }; 
+buildTable(filteredData);
+}
+d3.selectAll("filter-btn").on("click", handleClick);
+buildTable(tableData);
