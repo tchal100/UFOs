@@ -1,5 +1,5 @@
-!DOCTYPE html>
-# UFO Finder 
+<!DOCTYPE html>
+ <!-- UFO Finder  -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,15 +11,15 @@ rel="stylesheet"
 href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 crossorigin="anonymous"
-/><link rel="stylesheet" href="static/css/style.css">
-<body>
+/><link rel="stylesheet" href="static/CSS/style.css">
+<body class="bg-dark" >
     <div class="wrapper">
     <div> <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="index.html">UFO Sightings</a>
+        <a class="navbar-brand bg-dark" href="index.html">UFO Sightings</a>
       </nav>
      <div class="jumbotron">
         <h1>The Truth Is Out There</h1>
-
+      </div>  
          <div class="container-fluid">
         <div class="row">
           <div class="col-md-4">
@@ -35,7 +35,19 @@ crossorigin="anonymous"
         <div class="container-fluid">
             <div class="row">
               <div class="col-md-3">
-    
+                <form class = "bg-dark">
+                  <p>Filter Search</p>
+                  <ul class = "bg-dark"> 
+                    <li class = "bg-dark">
+                      <label for="date">Enter Date</label>
+                      <input type="text" placeholder="1/10/2010" id="datetime"/>
+                    </li>
+                  
+                       <button id="filter-btn" type="button" class="btn btn-default">
+                         Filter Table
+                       </button>
+                   
+                 </form>
               </div>
               <div class="col-md-9">
                      
@@ -57,20 +69,9 @@ crossorigin="anonymous"
     </div>
   </div>
 </div>
-<form>
-  <p>Filter Search</p>
-</form>
-<ul class="list-group">
-  </ul>
-  <label for="date">Enter Date</label>
-
-   <input type="text" placeholder="1/10/2010" id="datetime" />
-
-     <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-        </li>
-  
-
-
-   
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+ <script src="static/js/data.js"></script>
+ <script src="static/js/app.js"></script>
                     
            
