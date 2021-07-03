@@ -5,7 +5,7 @@
 
 
 ### Overview of the Project:
-This provides a more in-depth analysis of UFO sightings by allowing users to filter for multiple criteria at the same time. In addition to the date, table filters have been added for the city, state, country, and shape.
+ A more in-depth analysis of UFO sightings by allowing users to filter for multiple criteria at the same time. In addition to the date, table filters have been added for the city, state, country, and shape.
 
 
 ### Results  Filter UFO sightings on multiple criteria
